@@ -203,11 +203,11 @@ class Ui_MainWindow(object):
             self.description.setText(description)
 
             if (int(self.temp) < 80 and int(rain[:-1]) < 50) or ('cloudy' or 'Cloudy' in description):
-                self.weather_pic.setPixmap(QtGui.QPixmap("imgs/cloud.png"))
+                self.weather_pic.setPixmap(QtGui.QPixmap("cloud.png"))
             if (int(rain[:-1]) > 40) or 'Thunderstorm' in description or 'rainy' in description:
-                self.weather_pic.setPixmap(QtGui.QPixmap("imgs/rain.ico"))
+                self.weather_pic.setPixmap(QtGui.QPixmap("rain.ico"))
             if (int(self.temp) > 80) or 'Sunny' in description:
-                self.weather_pic.setPixmap(QtGui.QPixmap("imgs/sunny.png"))
+                self.weather_pic.setPixmap(QtGui.QPixmap("sunny.png"))
 
 
 
